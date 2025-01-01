@@ -1,0 +1,53 @@
+<!-- pages/home.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shivalaya- Construction Co. Pvt. Ltd.</title>
+  <link rel="stylesheet" href="./output.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <style>
+   body {
+            font-family: 'Poppins', sans-serif;
+        }
+  </style>
+
+</head>
+<body class="text-dark">
+
+  <div id="header"></div>
+  <div id="content"></div>
+  <div id="footer"></div>
+
+  <script src="../script.js"></script>
+  <script src="../swiperScript.js"></script>
+  
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,            // Number of slides visible at once
+      spaceBetween: 10,            // Space between slides
+      loop: true,                  // Infinite loop
+      autoplay: {                  // Autoplay configuration
+        delay: 2500,               // Delay between slides (in ms)
+        disableOnInteraction: false,
+      },
+      pagination: {                // Pagination configuration
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {                // Navigation buttons
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  
+
+</body>
+</html>

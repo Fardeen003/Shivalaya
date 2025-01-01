@@ -1,0 +1,15 @@
+{
+  "name": "shivalaya",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Fardeen Qureshi",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}
