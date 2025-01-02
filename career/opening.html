@@ -23,7 +23,7 @@
 
     <!-- Header -->
      <!-- components/header.html -->
-     <header class="lg:h-[140px] flex justify-between">
+  <header class="lg:h-[140px] flex justify-between">
       <div class="bg-light lg:w-[25%] h-full tilt-right flex justify-center items-center pr-12">
         <a href="index.html">
           <img
@@ -565,33 +565,28 @@
   </header>
 
   <!-- breadcrumb -->
-  <div class="bg-light h-[440px] flex flex-col justify-center items-center">
-    <h4 class="text-[36px] font-medium mb-1">CURRENT OPENINGS</h4>
-    <nav class="flex gap-2">
-        <span> HOME</span>
-        <img src="../../public/icons/Icon ion-ios-arrow-forward.svg"/>
-        <span>COMPANY </span>
-        <img src="../../public/icons/Icon ion-ios-arrow-forward.svg"/>
-        <span>CURRENT OPENINGS</span>
-    </nav> 
-    
+
+<div class="bg-light h-[150px] md:h-[400px] flex flex-col justify-center items-center">
+  <h4 class="text-[24px] md:text-[28px] lg:text-[36px] font-medium mb-1 text-center">CURRENT OPENINGS</h4>
+  <nav class="flex items-center justify-center gap-2">
+      <span class="text-[13px] md:text-[14px] lg:text-[16px]"> HOME</span>
+      <img src="../../public/icons/Icon ion-ios-arrow-forward.svg"/>
+      <span class="text-[13px] md:text-[14px] lg:text-[16px]">CAREER </span>
+      <img src="../../public/icons/Icon ion-ios-arrow-forward.svg"/>
+      <span class="text-[13px] md:text-[14px] lg:text-[16px]">CURRENT OPENINGS</span>
+  </nav>
 </div>
 
-
 <!-- leadership main start -->
-  <main class="px-16">
+  <main class="p-3 md:px-5 lg:px-16">
 
 
-    <div class="grid grid-cols-2 gap-16 my-20">
+    <div class="grid lg:grid-cols-2 gap-5 md:gap-16 md:my-10 lg:my-20">
         <div>
-
-            <h2 class="text-[36px] mb-5">WE <span class="font-bold">ARE HIRING</span></h2>
-      
-            <p class="my-6">Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text.</p>
-
-
+            <h2 class="text-[24px] md:text-[28px] lg:text-[36px] lg:mb-5">WE <span class="font-bold">ARE HIRING</span></h2>
+            <p class="my-3 lg:my-6 text-justify md:text-start">Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text.</p>
             <h5 class="text-[20px] font-semibold">Opening Positions</h5>
-            <ul class="mt-5 mb-10" >
+            <ul class="my-5 md:mb-10" >
                 <li class="flex items-center mb-2">
                     <svg fill="currentColor" class="size-[20px] mr-2" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"></path></g></svg>
                     Position Name
@@ -619,8 +614,8 @@
             </ul>
             <button class="btn !bg-white border border-dark !text-dark">APPLY NOW</button>
         </div>
-        <div class="w-[673px]">
-           <img src="https://www.dummyimage.com/673x448/000/fff" class="w-[673px] h-[448px] rounded-md"/>
+        <div class="lg:w-[673px]">
+           <img src="https://www.dummyimage.com/673x448/000/fff" class="lg:w-[673px] w-full lg:h-[448px] rounded-md object-contain"/>
         </div>
     </div>
 
