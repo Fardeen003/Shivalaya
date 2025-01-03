@@ -16,9 +16,11 @@ document.addEventListener("DOMContentLoaded", function () {
               delay: 3000, // Autoplay interval (3 seconds)
             },
           };
-    const swiper = new Swiper(".mySwiper", {
+   
+          const swiper = new Swiper(".mySwiper", {
         ...swiperSettings, }
           );
+
     const homeProjects = new Swiper(".homeProjects", {
         ...swiperSettings,
       // slidesPerView: 3,         // Number of slides visible at once
@@ -73,22 +75,29 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     const homeBlogs = new Swiper(".homeBlogs_swiper", {
-    ...swiperSettings,
-    // slidesPerView: 4,    
-    breakpoints: {
-      640: {
-        slidesPerView: 1,
-        spaceBetween: 15,
+     ...swiperSettings,
+      // slidesPerView: 3,         // Number of slides visible at once
+      spaceBetween: 20,         // Space between slides
+      pagination: {
+        el: ".swiper-pagination", // Enable pagination
+        clickable: true,
+        // dynamicBullets:true,
+        // dynamicMainBullets:1,
       },
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 20,
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 15,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 25,
+        },
       },
-      1024: {
-        slidesPerView: 4,
-        spaceBetween: 25,
-      },
-    },     // Number of slides visible at once
     })
   // Initialize Swiper
 // Initialize Swiper

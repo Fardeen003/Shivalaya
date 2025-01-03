@@ -23,23 +23,25 @@
 <body class="text-dark">
 
     <!-- components/header.html -->
-<header class="lg:h-[140px] flex justify-between">
+<header id="header" class="lg:h-[140px] flex justify-between">
+  <!-- logo start-->
     <div class="bg-light lg:w-[25%] h-full tilt-right flex justify-center items-center pr-12">
       <a href="index.html">
         <img
           src="../../public/logo/logo.png"
           height="58"
           width="225"
-          class="h-[58px] w-[225px] object-contain"
+          class="h-[58px] w-[225px] object-contain logo"
         />
       </a>
-
     </div>
+  <!-- logo end -->
   
-    <div class="lg:w-[82%] hidden lg:block  -ml-[7%]">
-      <div class="flex  items-center justify-between px-6 md:pr-14 text-black ">
+    <div class="lg:w-[82%] hidden lg:block -ml-[7%]">
+      <div class="flex items-center justify-between px-6 md:pr-14 text-black ">
         <div class="pl-16 lg:flex items-center justify-between h-[90px]">
           <a
+            id="phone"
             href="tel:0000000000"
             class="flex items-center mr-5 font-bold text-[14px] hover:text-primary"
             ><span
@@ -50,6 +52,7 @@
             +91 00000 00000</a
           >
           <a
+            id="email"
             href="mailto:shivalayaconstruction@gmail.com"
             class="flex items-center mr-5 font-bold text-[14px] hover:text-primary"
             ><span
@@ -59,7 +62,7 @@
             shivalayaconstruction@gmail.com</a
           >
         </div>
-        <a download class="font-medium flex">
+        <a id="broucher" download class="font-medium flex">
           <img
             src="../../public/icons/Icon material-round-download.svg"
             class="mr-2"
@@ -413,7 +416,7 @@
         src="../../public/logo/logo.png"
         height="58"
         width="225"
-        class="h-[58px] w-[225px] object-contain"
+        class="h-[58px] w-[225px] object-contain logo"
       />
     </div>
     <button id="closeDrawerBtn" class="absolute top-4 right-4 text-gray-600 hover:text-gray-800">
@@ -565,13 +568,28 @@
 </header>
   
     <!-- pages/home.html -->
-<main>
+<div>
 
     <!-- Banner -->
     <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
+      <div id="homeBanner" class="swiper-wrapper h-[640px]">
         <!-- Slides -->
-      <div class="swiper-slide"> 
+      <!-- <div class="swiper-slide"> 
+        <div class="text-center relative">
+          <img src="../../public/home/banner.png" class="h-[350px] md:h-full w-full object-cover" alt="Slide 1" />
+          <div class="absolute h-full w-full flex items-center top-0 left-0 text-start px-3 md:px-14">
+            <div class="md:w-1/2">  
+            <h4 class="text-white text-[25px] lg:text-[30px]">WELCOME TO FARDEEN</h4>
+            <h3 class=" text-[30px] md:text-[40px] lg:text-[60px] text-primary font-bold">SHIVALAYA</h3>
+            <h4 class="text-white md:text-[22px] lg:text-[30px] mb-5">CONSTRUCTION CO. PVT. LTD.</h4>
+            <p class=" text-white mb-7 text-[12px] lg:text-[16px]">Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text.</p>
+              <button class="btn">Contact</button>
+           </div>  
+          </div>
+        </div>
+      </div> -->
+
+      <!-- <div class="swiper-slide"> 
         <div class="text-center relative">
           <img src="../../public/home/banner.png" class="h-[350px] md:h-full w-full object-cover" alt="Slide 1" />
           <div class="absolute h-full w-full flex items-center top-0 left-0 text-start px-3 md:px-14">
@@ -603,24 +621,7 @@
   
           </div>
         </div>
-      </div>
-
-      <div class="swiper-slide"> 
-        <div class="text-center relative">
-          <img src="../../public/home/banner.png" class="h-[350px] md:h-full w-full object-cover" alt="Slide 1" />
-          <div class="absolute h-full w-full flex items-center top-0 left-0 text-start px-3 md:px-14">
-            <div class="md:w-1/2">  
-            <h4 class="text-white text-[25px] lg:text-[30px]">WELCOME TO</h4>
-            <h3 class=" text-[30px] md:text-[40px] lg:text-[60px] text-primary font-bold">SHIVALAYA</h3>
-            <h4 class="text-white md:text-[22px] lg:text-[30px] mb-5">CONSTRUCTION CO. PVT. LTD.</h4>
-            <p class=" text-white mb-7 text-[12px] lg:text-[16px]">Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text.</p>
-              <button class="btn">Contact</button>
-           </div>
-  
-  
-          </div>
-        </div>
-      </div>
+      </div> -->
 
       </div>
       <!-- Pagination -->
@@ -628,12 +629,13 @@
     </div>
   
     <!-- About Us -->
-     <div class=" my-3 md:my-12 grid lg:grid-cols-2 md:gap-16 lg:gap-28 p-3 md:px-14 justify-between items-center">
+     <div id="homeAboutUs">
+     <!-- <div class=" my-3 md:my-12 grid lg:grid-cols-2 md:gap-16 lg:gap-28 p-3 md:px-14 justify-between items-center">
       <div>
         <h6 class="text-primary font-medium">ABOUT US <img src="./public/icons/line.svg"/></h6>
         <h3 class="text-[24px] md:text-[28px] lg:text-[36px] my-2 md:my-5">ABOUT <span class="bg-primary text-white leading-[36px]">SHIVALAYA</span> CONSTRUCTION</h3>
-        <p class=" mb-4 lg:mb-7 text-[13px] text-justify md:text-center md:text-[14px] lg:text-[16px]">Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500S, When An Unknown Printer Took A Galley Of Type And Scrambled It To Make A Type Specimen Book.</p>
-        <p class="mb-4 lg:mb-7 text-[13px] text-justify md:text-center md:text-[14px] lg:text-[16px]">Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text.</p>
+        <p class=" mb-4 lg:mb-7 text-[13px] text-justify md:text-start md:text-[14px] lg:text-[16px]">Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500S, When An Unknown Printer Took A Galley Of Type And Scrambled It To Make A Type Specimen Book.</p>
+        <p class="mb-4 lg:mb-7 text-[13px] text-justify md:text-start md:text-[14px] lg:text-[16px]">Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text.</p>
         <div class="flex mb-4">
           <button class="btn">READ MORE</button>
           <button class="btn !text-primary !bg-white border !w-auto ml-5">
@@ -646,18 +648,22 @@
         <img src="../../public/home/about.png" width="673" height="400" class=" w-full h-[400px] object-cover"/>
       </div>
      </div>
+    </div> -->
+  </div>
+
   
      <!-- Our Products -->
-      <div class="px-3 md:px-14 my-3 md:my-14 lg:my-20">
+    <div id="homeProjects">
+      <!-- <div class="px-3 md:px-14 my-3 md:my-14 lg:my-20">
+
         <div class="text-center">
            <h6 class="text-primary font-medium flex flex-col items-center justify-center">OUR PRODUCTS <img src="./public/icons/line.svg"/></h6>
            <h3 class="text-[24px] md:text-[28px] lg:text-[36px] my-2 md:my-3 lg:my-5">OUR LATEST <span class="text-primary font-bold">PROJECTS</span></h3>
            <p class="lg:w-[80%] mx-auto text-[13px] text-justify md:text-center md:text-[14px] lg:text-[16px]">Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500S, When An Unknown Printer Took A Galley Of Type And Scrambled It To Make A Type Specimen Book.</p>
         </div>
-  
+
         <div class="my-10 swiper homeProjects">
           <div class="swiper-wrapper">
-
           <div class="swiper-slide h-[400px] w-[444px] rounded-lg shadow-md">
             <img src="../../public/home/blog1.png" class="w-full h-1/2 object-cover rounded-[inherit]">
             <div class="px-4">
@@ -725,10 +731,11 @@
 
 
         </div>
-      </div>  
-  
-      <!-- Our Services -->
-       <div class=" p-3 md:px-14">
+      </div>   -->
+    </div>
+
+    <div id="homeServices">
+       <!-- <div class=" p-3 md:px-14">
         <div class="text-center">
           <h6 class="text-primary font-medium flex flex-col justify-center items-center">OUR SERVICES<img src="./public/icons/underline.svg"/></h6>
           <h3 class="text-[24px] md:text-[28px] lg:text-[36px] my-1 md:my-3 lg:my-5">WHAT <span class="text-primary font-bold">WE DO</span></h3>
@@ -736,9 +743,7 @@
        </div>
   
   
-<!-- tabs -->
 <div class="lg:flex justify-between md:gap-20 my-10 tab_container">
-  <!-- Tab Headers -->
   <div class="grid lg:block grid-cols-2 gap-3 md:gap-5 mb-4">
     <div onclick="handleTab(1)" class="tab_tile active group" id="tab-1">
       <img src="../../public/home/service1.png" height="73" width="116" class="border-2 border-white md:mr-5"/>
@@ -758,7 +763,6 @@
     </div>
   </div>
 
-  <!-- Tab Content -->
   <div id="tab-content">
     <div class="relative " id="content-1">
       <img src="../../public/home/services.png" height="444" width="779" class="h-full w-full"/>
@@ -795,14 +799,17 @@
   </div>
 </div>
   
-       </div>
+       </div> -->
+
+   </div>
   
       <!-- Our Story -->
-       <div class="grid lg:grid-cols-2 px-3 md:px-14 lg:p-14 justify-between items-center lg:gap-28 ">
+     <div id="homeStory">
+       <!-- <div class="grid lg:grid-cols-2 px-3 md:px-14 lg:p-14 justify-between items-center lg:gap-28 ">
         <div>
           <h5 class="text-primary grid justify-center md:justify-start items-center md:items-start">OUR STORY<img src="./public/icons/underline.svg"/></h5>
           <h3 class="text-center md:text-start  text-[24px] md:text-[28px] lg:text-[36px] my-1 md:mt-3 md:mb-5">WHO <span class="text-primary font-bold"> WE ARE?</span></h3>
-          <p class="md:mb-6 mb-3 text-[13px] text-justify md:text-center md:text-[14px] lg:text-[16px]">Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500S, When An Unknown Printer Took A Galley Of Type And Scrambled It To Make A Type Specimen Book.</p>
+          <p class="md:mb-6 mb-3 text-[13px] text-justify md:text-start md:text-[14px] lg:text-[16px]">Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500S, When An Unknown Printer Took A Galley Of Type And Scrambled It To Make A Type Specimen Book.</p>
         <button class="btn">READ MORE</button>
         </div>
         <div class="relative">
@@ -811,10 +818,14 @@
             <img src="../../public/logo/logo.png" height="58" width="225" class="object-contain w-[100px] md:h-[58px] md:w-[225px] "/>
           </div>
         </div>
-       </div>
+       </div> -->
+    </div>
+
   
        <!-- TESTIMONIAL -->
-       <div style="background-image: url('../../public/home/testimonial-bg.png');" class="text-center mt-10 md:mt-20 py-10 p-3">
+     <div id="homeTestimonials">
+
+      <!-- <div style="background-image: url('../../public/home/testimonial-bg.png');" class="text-center mt-10 md:mt-20 py-10 p-3">
         <h6 class="text-primary font-medium mb-2 flex flex-col justify-center items-center">TESTIMONIALS<img src="./public/icons/underline.svg"/></h6>
         <h3 class="text-[24px] md:text-[28px] lg:text-[36px] my-2 md:mb-4">WHAT OUR <span class="text-primary font-bold">CLIENTS SAY!</span></h3>
         <p class="lg:w-[75%] text-[13px] text-justify md:text-center md:text-[14px] lg:text-[16px] mx-auto">Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500S, When An Unknown Printer Took A Galley Of Type And Scrambled It To Make A Type Specimen Book.</p>
@@ -881,10 +892,14 @@
 
   
       </div>
-      </div>
+      </div> -->
+
+    </div>
   
   
       <!-- OUR EMPANELMENT -->
+
+      <div id="homeEmpanelmen">
   
       <div style="background-image: url('../../public/home/partners.png');" class="text-center mb-5 md:mb-20 p-3 py-5 md:py-8 lg:py-20">
         <h6 class="text-white font-medium  md:mb-2">OUR EMPANELMENT</h6>
@@ -894,48 +909,6 @@
        <div class=" px-14 my-8 gap-3 swiper slider_pagination mySwiper">
         <div class="swiper-wrapper">
 
-      <!-- <div class="swiper-slide">
-        <div class="swiper-grid">
-          <div class="swiper-grid-item">
-           <img src="https://www.dummyimage.com/220x95/000/fff" class="rounded-lg"/>
-          </div>
-          <div class="swiper-grid-item">
-            <img src="https://www.dummyimage.com/220x95/000/fff" class="rounded-lg"/>
-          </div>
-          <div class="swiper-grid-item">
-            <img src="https://www.dummyimage.com/220x95/000/fff" class="rounded-lg"/>
-          </div>
-           <div class="swiper-grid-item">
-            <img src="https://www.dummyimage.com/220x95/000/fff" class="rounded-lg"/>
-           </div>
-           <div class="swiper-grid-item">
-            <img src="https://www.dummyimage.com/220x95/000/fff" class="rounded-lg"/>
-           </div>
-           <div class="swiper-grid-item">
-            <img src="https://www.dummyimage.com/220x95/000/fff" class="rounded-lg"/>
-           </div>        
-           <div class="swiper-grid-item">
-            <img src="https://www.dummyimage.com/220x95/000/fff" class="rounded-lg"/>
-           </div>       
-            <div class="swiper-grid-item">
-            <img src="https://www.dummyimage.com/220x95/000/fff" class="rounded-lg"/>
-           </div>        
-           <div class="swiper-grid-item">
-            <img src="https://www.dummyimage.com/220x95/000/fff" class="rounded-lg"/>
-           </div>        
-           <div class="swiper-grid-item">
-            <img src="https://www.dummyimage.com/220x95/000/fff" class="rounded-lg"/>
-           </div>
-           <div class="swiper-grid-item">
-            <img src="https://www.dummyimage.com/220x95/000/fff" class="rounded-lg"/>
-           </div>      
-           <div class="swiper-grid-item">
-            <img src="https://www.dummyimage.com/220x95/000/fff" class="rounded-lg"/>
-           </div>
-
-        </div>
-      </div> -->
-
       <div class="swiper-slide">
         <div class="grid grid-cols-2 md:grid-cols-6 gap-2 md:gap-5">
           <img src="https://www.dummyimage.com/220x95/000/fff" class="rounded-lg"/>
@@ -950,9 +923,7 @@
           <img src="https://www.dummyimage.com/220x95/000/fff" class="rounded-lg"/>
           <img src="https://www.dummyimage.com/220x95/000/fff" class="rounded-lg"/>
           <img src="https://www.dummyimage.com/220x95/000/fff" class="rounded-lg"/>
-
         </div>
-
       </div>
 
       <div class="swiper-slide">
@@ -969,9 +940,7 @@
           <img src="https://www.dummyimage.com/220x95/000/fff" class="rounded-lg"/>
           <img src="https://www.dummyimage.com/220x95/000/fff" class="rounded-lg"/>
           <img src="https://www.dummyimage.com/220x95/000/fff" class="rounded-lg"/>
-
         </div>
-
       </div>
 
       <div class="swiper-slide">
@@ -988,9 +957,7 @@
           <img src="https://www.dummyimage.com/220x95/000/fff" class="rounded-lg"/>
           <img src="https://www.dummyimage.com/220x95/000/fff" class="rounded-lg"/>
           <img src="https://www.dummyimage.com/220x95/000/fff" class="rounded-lg"/>
-
         </div>
-
       </div>
 
       </div>
@@ -1000,6 +967,9 @@
   
        </div>
       </div>
+
+    </div>
+
   
   
       <div class="p-3 ">

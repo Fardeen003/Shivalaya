@@ -578,14 +578,16 @@
 
 
 <!-- about main start -->
-  <main class=" p-3 md:p-14 md:my-20">
+  <main class="p-3 md:p-14 md:my-20">
 
     <!-- about us -->
-    <div>
+  <div id="aboutUs">
+
+    <!-- <div>
         <div class="lg:flex gap-16">
         <div>
         <h6>ABOUT US<img src="../public/icons/underline.svg"/></h6>
-      <h2  class="text-[24px] md:text-[28px] lg:text-[36px] font-medium my-4">ABOUT <span class="font-bold">SHIVALAYA</span> CONSTRUCTION</h2>
+        <h2  class="text-[24px] md:text-[28px] lg:text-[36px] font-medium my-4">ABOUT <span class="font-bold">SHIVALAYA</span> CONSTRUCTION</h2>
         <p class="text-[13px] md:text-[14px] lg:text-[16px] mb-1 md:mb-4 text-justify md:text-start">Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500S, When An Unknown Printer Took A Galley Of Type And Scrambled It To Make A Type Specimen Book.</p>
         <p class="text-[13px] md:text-[14px] lg:text-[16px] mb-1 md:mb-4 text-justify md:text-start">Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text.</p>
         <p class="text-[13px] md:text-[14px] lg:text-[16px] mb-1 md:mb-4 text-justify md:text-start">Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text.</p>
@@ -600,15 +602,15 @@
             <img src="../../public/icons/Icon material-round-download.svg" class="mr-2 fill-dark"/>
             DOWNLOAD BROUCHER 
           </button>
-    </div>
-
-    </div>
+    </div> -->
+  </div>
 
     <!-- who we are -->
+   <div id="ourStory">
     <div class="my-5 md:my-20">
         <div class="lg:float-right relative">
             <img src="https://www.dummyimage.com/604x348/000/fff" class="shadow-lg rounded-xl"/>
-            <img src="https://www.dummyimage.com/281x186/000/fff" class="md:absolute -bottom-10 mt-2 w-full  right-0 lg:-left-20 rounded-xl shadow-lg"/>
+            <img src="https://www.dummyimage.com/281x186/000/fff" class="md:absolute -bottom-10 mt-2 w-full md:h-[186px] md:w-[281px] right-0 lg:-left-20 rounded-xl shadow-lg"/>
         </div>
         <div>
         <div class="lg:w-1/2 my-12 ">
@@ -624,6 +626,8 @@
       
         </div>
     </div>
+  </div>
+
 
   </main>
   <!-- about main end -->
@@ -631,7 +635,7 @@
   
   <!-- footer -->
 
-<footer class="bg-light p-3 md:px-14 md:pt-16 text-[14px]">
+<footer class="bg-light p-3 md:px-14 md:pt-16 text-[14px] ">
 
 
     <div class="lg:flex">
@@ -756,6 +760,7 @@
   
 
    <script src="/js/script.js"></script>
+   <script type="module" src="../services/aboutService.js"></script>
     
 </body>
 </html>
